@@ -25,3 +25,6 @@ public:
         return r;
     }
 };
+
+//T(n) = O(nlogn)
+//S(n) = O(1)
