@@ -21,3 +21,6 @@ public:
         return mprofit;
     }
 };
+
+//T(n)= O(mn+nlogn)
+//S(n)= O(n)
