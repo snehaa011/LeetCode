@@ -14,3 +14,23 @@ struct Node {
         prev = NULL;
     }
 };
+
+class Solution
+{
+    public:
+    Node* reverseDLL(Node * head)
+    {
+        //Your code here
+        Node* before=NULL;
+        Node *current=head;
+        while (current!=NULL){
+            before=current->prev;
+            current->prev=current->next;
+            current->next=before;
+            current=current->prev;
+        }
+        return before? before->prev : head;
+    }
+};
+
+
